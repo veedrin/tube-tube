@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "TubeTube",
+  "description": "一个简单的 Youtube 首页布局插件：设置每行视频的数量；显示或隐藏 Shorts 列表",
+  "version": "1.0.0",
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>TubeTube Settings</title>
+  <link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+
+<body>
+  <h3 class="tubetube-setting-heading">TubeTube 设置</h3>
+  <div class="tubetube-setting-content">
+    <div class="tubetube-option">
+      <span class="tubetube-label">每行视频数</span>
+      <select id="tubetube-select-columns"></select>
+    </div>
+    <div class="tubetube-option">
+      <span class="tubetube-label">显示 Shorts</span>
+      <label class="tubetube-switch">
+        <input type="checkbox" id="tubetube-switch-shorts">
+        <span class="slider"></span>
+      </label>
+    </div>
+    <div class="tubetube-danger-zone">
+      <button id="tubetube-clear-storage">清除所有设置</button>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+
+</html>
